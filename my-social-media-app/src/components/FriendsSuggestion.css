@@ -1,0 +1,19 @@
+.friends-suggestion {
+    margin-bottom: 25px;
+  }
+  
+  .suggestion {
+   
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .suggestion button {
+    
+    cursor: pointer;
+  }
+  

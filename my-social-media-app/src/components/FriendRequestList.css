@@ -1,0 +1,27 @@
+.friend-request {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend-name {
+  /* Styles for friend name */
+  text-align: left;
+}
+
+.accept-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px; /* Adjust the size as you see fit */
+  padding: 5px 10px; /* Adjust padding as needed */
+}
+
+.accept-button:hover {
+  background-color: #ddd; /* Grey background on hover */
+}
+
+/* You may want to add more specific styles for the button to make it look more like a clickable element */

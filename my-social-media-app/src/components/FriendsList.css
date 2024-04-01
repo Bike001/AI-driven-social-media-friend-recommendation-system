@@ -1,0 +1,16 @@
+.friends-list {
+  margin-bottom: 25px;
+}
+  
+.friend {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 10px;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.friend:hover {
+  background-color: lightgray; /* Change background color on hover */
+}

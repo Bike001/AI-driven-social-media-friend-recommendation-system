@@ -1,0 +1,66 @@
+/* Post.css */
+
+.post {
+  border-top: 1px solid #e1e4e8; /* Adds a line at the top */
+  border-bottom: 1px solid transparent; /* Hides the bottom border */
+  border-right: 1px solid transparent; /* Hides the right border */
+  margin-top: 10px;
+  margin-left: 25vw; /* Space from the left edge of the container */
+  margin-right: 25vw; /* Space from the right edge of the container */
+  position: relative; /* Needed for positioning the pseudo-element */
+}
+
+.post::before {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute; /* Position relative to the post */
+  left: 10px; /* Position the line inside the post */
+  top: 50%; /* Start at the vertical center of the post */
+  transform: translateY(-50%); /* Shift the line up by half its height to center it */
+  height: 50%; /* Height of the line, adjust as needed */
+  width: 0.5px; /* Width of the line */
+  background-color: #e1e4e8; /* Color of the line */
+  border-left: 0.5px solid #e1e4e8; /* Makes the line visible */
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.post-user {
+  font-weight: bold;
+  font-size: 16px; /* Slightly larger font size for better readability */
+  color: #333; /* Dark color for the user's name */
+  margin-top: 6px;
+  
+}
+
+.post-content {
+  font-size: 14px; /* Adjust font-size as needed */
+  line-height: 1.6; /* Spacing between lines of text */
+  margin-bottom: 12px; /* Space after the content before the actions */
+  padding: 20px; /* Adds padding on all sides */
+  text-align: left; /* Aligns text to the left */
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.post-like, .post-comment {
+  display: inline-block; /* Allows width and height to be set */
+  width: 24px; /* Set the width of your icon */
+  height: 24px; /* Set the height of your icon */
+  background-size: cover; /* Ensures the background image covers the whole element */
+  cursor: pointer;
+  /* background-image will be set in-line in the JSX */
+}
+
+/* You can add a hover effect for icons to give a feedback on interaction */
+.post-like:hover, .post-comment:hover {
+  opacity: 0.7;
+}
