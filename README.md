@@ -50,12 +50,73 @@ We use a pretrained model for sentiment analysis from Hugging Face, capable of d
 
 ## How to Use
 
-Detailed instructions on how to set up and run the project locally would be provided here.
+1. **Clone the Repository:**
+git clone https://github.com/Bike001/AI-driven-social-media-friend-recommendation-system-.git
+2. **Navigate to the Project Directory:**
+3. **Extract All Zip Files (if any are present):**
+Make sure all the required zip files are extracted.
+4. **Frontend Setup:**
+- Open a terminal window and navigate to the `my-social-media-app` directory:
+  ```
+  cd my-social-media-app
+  ```
+- Install the npm packages:
+  ```
+  npm install
+  ```
+- Start the frontend server:
+  ```
+  npm start
+  ```
+
+5. **Backend Setup:**
+- Open another terminal window and navigate to the `social_media_backend` directory:
+  ```
+  cd social_media_backend
+  ```
+- Set up a virtual environment (optional but recommended):
+  ```
+  python3 -m venv venv
+  source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+  ```
+- Install the required Python packages:
+  ```
+  pip install -r requirements.txt
+  ```
+- Start the backend server:
+  ```
+  python manage.py runserver
+  ```
+
+Now you have both servers running: the React frontend on the default port 3000 and the Django backend on port 8000.
 
 ## Contributions
 
-We welcome contributions. Please fork the repository, create a feature branch, and submit your pull requests for review.
+Currently, the project is managed by me, and I am not looking for external contributions. However, if you have suggestions or feedback, please feel free to reach out.
 
 ## License
 
-Specify the license under which this project is available.
+MIT License
+
+Copyright (c) [2024] [Bike001]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+---
