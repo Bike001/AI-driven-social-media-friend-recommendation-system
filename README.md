@@ -14,13 +14,14 @@ The frontend is built with React and allows users to interact with the system. S
 
 ### Homepage
 
-![Homepage Screenshot](Homepage.png)
+<img width="720" alt="image" src="https://github.com/Bike001/AI-driven-social-media-friend-recommendation-system/assets/114451652/fc1f9bad-8688-42c5-82e4-9f82c565db1f">
 
 *Figure 2: Screenshot of Website Homepage*
 
 ### Friends Page
 
-![Friends Page Screenshot](FriendsPage.png)
+<img width="730" alt="image" src="https://github.com/Bike001/AI-driven-social-media-friend-recommendation-system/assets/114451652/b97531d5-8688-4ead-b885-aec202ede4f7">
+
 
 *Figure 3: Screenshot of Friend Recommendation Page*
 
@@ -87,8 +88,13 @@ Make sure all the required zip files are extracted.
   ```
   python manage.py runserver
   ```
+5. **Prolog Setup:**
+- Download Prolog
 
-Now you have both servers running: the React frontend on the default port 3000 and the Django backend on port 8000.
+- Start the Prolog server:
+ swipl emotions_api_server.pl
+
+Now you have three servers running: the React frontend on the default port 3000 , the Django backend on port 8000 and the Prolog server for Rule-based system.
 
 ## Contributions
 
